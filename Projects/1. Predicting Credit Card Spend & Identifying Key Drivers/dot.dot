@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="card <= 0.896\nmse = 0.431\nsamples = 3500\nvalue = 5.993"] ;
+1 [label="creddebt <= 0.898\nmse = 0.291\nsamples = 663\nvalue = 6.476"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="retire <= 0.5\nmse = 0.283\nsamples = 414\nvalue = 6.336"] ;
+1 -> 2 ;
+3 [label="mse = 0.268\nsamples = 335\nvalue = 6.401"] ;
+2 -> 3 ;
+4 [label="mse = 0.252\nsamples = 79\nvalue = 6.061"] ;
+2 -> 4 ;
+5 [label="tollmon <= 517.625\nmse = 0.22\nsamples = 249\nvalue = 6.708"] ;
+1 -> 5 ;
+6 [label="mse = 0.227\nsamples = 171\nvalue = 6.618"] ;
+5 -> 6 ;
+7 [label="mse = 0.148\nsamples = 78\nvalue = 6.904"] ;
+5 -> 7 ;
+8 [label="card2 <= 0.896\nmse = 0.396\nsamples = 2837\nvalue = 5.88"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="creddebt <= 0.762\nmse = 0.3\nsamples = 597\nvalue = 6.214"] ;
+8 -> 9 ;
+10 [label="mse = 0.279\nsamples = 300\nvalue = 6.076"] ;
+9 -> 10 ;
+11 [label="mse = 0.283\nsamples = 297\nvalue = 6.354"] ;
+9 -> 11 ;
+12 [label="retire <= 0.5\nmse = 0.384\nsamples = 2240\nvalue = 5.791"] ;
+8 -> 12 ;
+13 [label="mse = 0.355\nsamples = 1872\nvalue = 5.853"] ;
+12 -> 13 ;
+14 [label="mse = 0.405\nsamples = 368\nvalue = 5.47"] ;
+12 -> 14 ;
+}
